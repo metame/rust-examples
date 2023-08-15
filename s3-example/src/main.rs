@@ -5,7 +5,6 @@ use s3::creds::Credentials;
 
 type MyResult<T> = Result<T, S3Error>;
 
-// create config functions for easily switching between minio and s3
 async fn upload_object(file_id: &str, path: &str) -> MyResult<()> {
     let cred = Credentials::default()?;
     let region = "us-east-1".parse()?;
