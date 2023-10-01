@@ -1,3 +1,4 @@
+#![allow(dead_code)]
 use std::io::{Error, ErrorKind};
 
 fn only_error() -> Result<(), Error> {
@@ -6,14 +7,14 @@ fn only_error() -> Result<(), Error> {
 }
 
 fn do_something() -> Result<(), Error> {
-    /// do logic here
+    // do logic here
     only_error()?;
     Ok(())
 }
 
 
 fn main() {
-    let mut u: () = ();
+    let u: () = ();
     let mut t: (i32, String) = (2, "foo".to_string());
     println!("{u:?}");
     println!("{t:?}");

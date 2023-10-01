@@ -17,3 +17,8 @@
 
 # macOS directory attributes
 .DS_Store
+
+
+# Added by cargo
+
+/target
